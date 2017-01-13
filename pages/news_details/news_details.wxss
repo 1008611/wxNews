@@ -1,0 +1,12 @@
+/* pages/news_details/news_details.wxss */
+
+.text{
+    padding:5rpx;
+    font-size: 30rpx;
+ }
+
+.line{
+     padding: 5rpx;
+     background: #0015AE
+     font-size: 30rpx;
+}

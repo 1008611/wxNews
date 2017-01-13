@@ -1,0 +1,19 @@
+/* pages/zhihu/zhihu.wxss */
+
+.item-list{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+
+}
+
+.img{
+    float:left;
+    padding:5rpx;
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.text{
+ font-size: 30rpx;
+}

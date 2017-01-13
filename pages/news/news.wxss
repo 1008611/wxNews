@@ -1,0 +1,12 @@
+/* pages/zhihu/zhihu.wxss */
+.item-list{
+    padding:20rpx;
+}
+
+.text{
+    font-size: 30rpx;
+}
+
+.slide-image{
+    width: 100%;
+}

@@ -1,0 +1,5 @@
+<!--pages/news_details/news_details.wxml-->
+<text class="text">{{desc}}</text>
+<view >
+  <text class="line">详情请打开网址：{{link}}</text>
+</view>

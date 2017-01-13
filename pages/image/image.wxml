@@ -1,0 +1,15 @@
+<!--pages/image/image.wxml-->
+
+<view >
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="*this">
+
+    <view >
+        <view class="topRightView">
+            <text class="text">{{index + 1}}. {{item.title }}</text>
+
+            <image class="profileImage" src="{{item.picUrl}}" />
+        </view>
+     </view>
+
+  </block>
+</view>

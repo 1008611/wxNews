@@ -1,0 +1,9 @@
+/* pages/image/image.wxss */
+
+.text{
+     padding:3rpx;
+}
+
+.slide-image{
+    width: 100%;
+}

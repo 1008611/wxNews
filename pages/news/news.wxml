@@ -1,0 +1,23 @@
+<!--pages/zhihu/zhihu.wxml-->
+
+<swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+           <image src="{{item.url}}" class="slide-image" width="355" height="150"/>
+      </swiper-item>
+    </block>
+</swiper>
+
+<view >
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="*this">
+    <view class="divLine"></view>
+    <view >
+        <view class="item-list" data-channelId="{{item.channelId}}"  bindtap="toDetail" >
+            <text  class="text"> {{item.name}}</text>
+        </view>
+     </view>
+
+  </block>
+
+</view>

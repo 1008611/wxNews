@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/news/news",
+     "pages/image/image",
+     "pages/news_detail/news_detail",
+      "pages/news_details/news_details"
+  ],
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#eb4f38",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/news/news",
+        "text": "新闻",
+        "iconPath": "image/wordN.png",
+        "selectedIconPath": "image/wordS.png"
+      },
+      {
+        "pagePath": "pages/image/image",
+        "text": "美图",
+        "iconPath": "image/imageN.png",
+        "selectedIconPath": "image/imageS.png"
+      }
+    ]
+  },
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "backgroundColor":"#FOFOFO",
+    "navigationBarBackgroundColor": "#65dd47",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

@@ -1,0 +1,27 @@
+<!--pages/zhihu/zhihu.wxml-->
+
+<view >
+  <block wx:for="{{list}}" wx:for-item="item" wx:key="*this">
+    <view class="divLine"></view>
+
+    <view >
+         <view class="item-list" data-desc="{{item.desc}}" data-link="{{item.link}}" bindtap="toDetails" >
+
+                 <block wx:if="{{item.imageurls.length>3}}" >
+                    <image class="img" src="{{item.imageurls[0].url}}" maxSize="3" background-size="cover"></image>
+                    <image class="img" src="{{item.imageurls[1].url}}" maxSize="3" background-size="cover"></image>
+                    <image class="img" src="{{item.imageurls[2].url}}" maxSize="3" background-size="cover"></image>
+
+                  </block>
+
+                <block wx:for="{{item.imageurls}}" wx:if="{{item.imageurls.length<3}}" wx:for-item="img" wx:key="*this">
+                    <image class="img" src="{{img.url}}" maxSize="3" background-size="cover"></image>
+
+                </block>
+            <text class="text"> {{item.title}}</text>
+
+        </view>
+     </view>
+
+  </block>
+</view>
